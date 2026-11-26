@@ -13,3 +13,5 @@ docs = vector_db.similarity_search(
 reranked_docs = reranker(
     question,
     docs)
+
+top_docs = reranked_docs[:4]
