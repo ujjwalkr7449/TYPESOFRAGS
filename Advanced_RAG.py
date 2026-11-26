@@ -8,3 +8,8 @@ docs = vector_db.similarity_search(
     rewritten_query,
     k=10
 )
+
+# Then rerank the 10 results
+reranked_docs = reranker(
+    question,
+    docs)
