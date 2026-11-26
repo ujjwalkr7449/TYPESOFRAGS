@@ -13,5 +13,5 @@ docs = vector_db.similarity_search(
 reranked_docs = reranker(
     question,
     docs)
-
+# Finally, select the top 4 results
 top_docs = reranked_docs[:4]
